@@ -1,0 +1,385 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This elements selectors styling encompasses the entire web application */
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Ensures that the header is above other elements */
+
+}
+/* This class selector was used to style the nav bar */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #819ebd;
+  color: #ffffff;
+  
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.logo-title h1 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo-title img {
+  height: 40px;
+  margin-right: 20px; /* This gives some space between logo and title */
+  border-radius: 100%;
+}
+
+/* This class selector gave these attributes to the nav bar */
+.site-header nav {
+  margin-right: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  font-size: 20px;
+}
+
+/* Class selector-not currently in use */
+.site-header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* This element selector added margin and padding to the li within the ul for the nav bar */
+nav ul li {
+  margin-left: 25px;
+  padding: 8px;
+  display: inline;
+  text-align: center;
+}
+
+/* This element selector made sure the color didn't change from white when the links were clicked: applied to the anchor tag within the li within the ul for the nav bar */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* This class selector added properties to my hero image below the nav bar */
+.hero {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/hro-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
+  display: flex;
+  align-items: center; /* To vertically center the content */
+  justify-content: space-around; /* To distribute the available space around the items */
+}
+.photo-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.hero img {
+  height: 400px;
+  border-radius: 100%;
+  margin-right: 100px;
+}
+
+.hero .quote {
+  align-items: center; /* Vertically center the text */
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 100px;
+}
+/* This element selector styles applied to the bottom half of the web app (ie. "About Me", "Work", and "Contact-Me" sections) */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% auto;
+}
+  
+/* This element selector added padding around the main section (everything below the hero image and above the footer */
+main section {
+  padding: 10px;
+}
+
+/* This element selector added these properties to all p tags on the web application */
+p {
+  padding: inherit;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 50px;
+}
+
+/* This element selector added these properties to all h2 tags on the web application */
+h2 {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: inherit;
+  line-height: 50px;
+}
+
+#About-Me {
+  background: linear-gradient(to bottom, #819EBD, #819EBD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: inherit;
+  width: 100vw; /* 100% of the viewport width */
+}
+
+#About-Me h2, {
+margin: 0;
+  padding: inherit;
+  width: 90%; /* Adjust according to your preference, this leaves a bit of room on the sides */
+  text-align: start; /* If you want the text to be centered */
+}
+
+#About-Me P {
+  margin: 0;
+  padding: 20px;
+  width: 80%; /* Adjust according to your preference, this leaves a bit of room on the sides */
+  text-align: start; /* If you want the text to be centered */
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+}
+
+
+
+/* This class selector added flex properties (grow-1) to the sections "About Me", "Work", and "Contact Me" */
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/* Class selector-not currently in use */
+.card img {
+  width: 100%;
+  min-width: 600px;
+}
+
+/* This class selector added these display and color properties to the container class which was the class my grid was held in */
+.container {
+
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* This id selector was where I created the dimensions of the grid I used for spacing out project 2 - project 7 */
+#project-grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* This id selector allowed the width of my work section to take up 100% of its container */
+#Work {
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 80%;
+}
+
+/* This id selector is where I added the attributes to the screenshot I added to "Project 1" and also where the URL to the screenshot is linked */
+#p1-img {
+  width: 600px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+#p1-img {
+  width: 600px;
+  height: 400px;
+  background-image: url("../images/Screenshot\ 2023-02-16\ at\ 4.28.53\ PM.png");
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+#p1 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  max-width: 600px;
+  top: 0px;
+}
+
+/* This class selector was used to give a max-width to all a tags within the class="Work" */
+.Work a {
+  max-width: 300px;
+}
+
+/* This class selector was where I added boxes containing "Project 2" - "Project 7" */
+.Work a p {
+  position: relative;
+  top: 24px;
+  background-color: #CF8965;
+  color: #ffffff;
+  
+}
+
+/* This class selector was used to give a max-width to all a tags within the class="Work" */
+.Work a {
+  max-width: 300px;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.contact-me {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 60px;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #819ebd;
+  color: #ffffff;
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-even;
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  font-size: 30px;
+  margin-right: 100px;
+}
+
+.contact-items li {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+    align-items: center;
+    align-content: center;
+    font-size: 20px;
+    padding: 30px;
+  
+}
+.footer {
+  padding: 20px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-content: center
+  align-items: center 
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+  sans-serif;
+}
+
+
+.footer h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer p {
+font-size: 20px;
+  text-align: center;
+}
+
+/* Media query for screen sizes 992px - 1200px */
+
+@media screen and (max-width: 1200px){
+  .photo-title {
+    flex-direction: column;
+  }
+  .photo-title img {
+    margin-right: 0px;
+  }
+  .photo-title .quote {
+    margin-left: 0px;
+    max-width: 1000px;
+  }
+}
+
+/* Media query for screen sizes 810px-992px */
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+  #project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* Media query for screen sizes 768px-810px */
+@media (max-width: 810px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    padding-top: 10px;
+  }
+}
+
+/* Media query for screen sizes 520px-768px */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  #project-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* Media query for screen sizes < 520px */
+@media (max-width: 520px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
