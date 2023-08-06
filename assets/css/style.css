@@ -120,14 +120,6 @@ header {
   margin-left: 80px;
   padding: 0 
   
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2% auto;
-}
-
 }
 /* This element selector styles applied to the bottom half of the web app (ie. "About Me", "Work", and "Contact-Me" sections) */
 main {
