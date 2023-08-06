@@ -52,7 +52,7 @@ header {
 .logo-title img {
   height: 40px;
   margin-right: 20px; /* This gives some space between logo and title */
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 /* This class selector gave these attributes to the nav bar */
@@ -67,7 +67,7 @@ header {
  ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
+  
 }
 
 
@@ -156,13 +156,18 @@ h2 {
   background: linear-gradient(to bottom, #819EBD, #819EBD);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: inherit;
   padding: inherit;
   width: 100vw; /* 100% of the viewport width */
 }
 
+.About-Me-Content {
+width: 100%;
+display: flex;
+flex-direction: column;
+padding: 30px;
+
+}
 
 #About-Me P {
   margin: inherit;
@@ -341,24 +346,84 @@ margin-bottom:20px
   }
 
   .site-header nav ul {
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  @media (max-width: 660px) {
+    .project-grid {
+      flex-direction: column;
+    }
+    .project-1, .project-2, .project-4 {width:100%}
+    .photo-title img {
+      height: 200px;
+      margin-right: 0px;
+    }
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+      padding-top: 10px;
+    }
+  
+    .site-header nav ul {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-direction: column; 
+      }
+  
+  
+      .contact-items ul  {
+    
+        display: flex
+        flex-direction:column ; 
+  }
   }
 
 @media (max-width: 520px) {
 
+  .photo-title{
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 50px;
+    
+  }
+
   .photo-title img {
     height: 200px;
-    margin-right: 0px;
+    align-self: center;
+    margin-top: 25px;
+    padding: 0;
   }
   nav ul {
     flex-wrap: wrap;
     flex-direction: row; 
   }
-  .contact-items {
-
-    flex-wrap: wrap;
-    flex-direction: column; 
+      
+.hero .quote { 
+  font-size: 25px;
+  text-align: center;
+    }
+    nav ul {
+      flex-wrap: wrap;
+      flex-direction: row; 
+    }
+    .contact-content {
+      display: flex;
+      flex-direction: column; 
+      }
+  
+  
+      .contact-items ul  {
+    
+        display: flex
+        flex-direction:column ; 
 
   }
 
@@ -386,9 +451,16 @@ margin-bottom:20px
       flex-wrap: wrap;
       flex-direction: row; 
     }
-    .contact-items {
+
+    .contact-content {
+    display: flex;
+    flex-direction: column; 
+    }
+
+
+    .contact-items ul  {
   
-      flex-wrap: wrap;
-      flex-direction: column; 
+      display: flex;
+      flex-direction: row; 
     }
 }
